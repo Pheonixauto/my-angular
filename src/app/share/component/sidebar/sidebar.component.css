@@ -1,0 +1,13 @@
+.sidenav {
+  width: 10vw;
+  height: 100vh;
+  background-color: gray;
+}
+
+.sidenav .sidenav-header {
+  height: 10%;
+}
+
+.sidenav .sidenav-body {
+  height: 80%;
+}
