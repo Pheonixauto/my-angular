@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
-import { UserComponent } from './component/user/user.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MessagesComponent } from './share/component/messages/messages.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, UserComponent],
+  imports: [BrowserModule, FormsModule, AppRoutingModule,MessagesComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
