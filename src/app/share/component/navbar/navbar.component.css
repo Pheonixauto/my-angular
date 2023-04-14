@@ -1,6 +1,6 @@
 .nav {
   height: 56px;
-  width: 90vw;
+  width: 100vw;
   float: right;
-  background-color: gray;
+  background: linear-gradient(to bottom, #0a5163, #5eabc2);
 }

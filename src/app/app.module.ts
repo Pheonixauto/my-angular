@@ -7,10 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { MessagesComponent } from './share/component/messages/messages.component';
 import { NavbarComponent } from './share/component/navbar/navbar.component';
 import { SidebarComponent } from './share/component/sidebar/sidebar.component';
+import { RouterLink } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, AppRoutingModule,MessagesComponent,NavbarComponent, SidebarComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    MessagesComponent,
+    NavbarComponent,
+    SidebarComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

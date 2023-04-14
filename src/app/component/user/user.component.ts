@@ -9,20 +9,18 @@ import { User } from 'src/app/model/User';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  styleUrls: ['./user.component.css'],
 })
 export class UserComponent implements OnInit {
-  users :User[]=[]
-  constructor(private userService:UserService){
-
-  }
+  users: User[] = [];
+  constructor(private userService: UserService) {}
   ngOnInit(): void {
-   this.getUsers()
-    }
+    //  this.getUsers()
+  }
 
-    getUsers(){
-     this.userService.getUsers().subscribe((res:User[])=>{
-       this.users=res
-     })
-    }
+  getUsers() {
+    this.userService.getUsers().subscribe((res: User[]) => {
+      this.users = res;
+    });
+  }
 }
