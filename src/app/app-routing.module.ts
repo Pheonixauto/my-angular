@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserComponent } from './component/user/user.component';
 import { RouterModule, Routes } from '@angular/router';
-import { VegetablesComponent } from './component/vegetables/vegetables.component';
+import { HomeComponent } from './component/home/home.component';
 
 const routes: Routes = [
-  { path: 'user', component: UserComponent },
-  { path: 'vegetable', component: VegetablesComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: 'home', component: HomeComponent },
+  {
+    path: 'vegetable',
+    loadChildren: () =>
+      import('./component/vegetables/vegetables-routing.module').then(
+        (m) => m.VegetablesRoutingModule
+      ),
+  },
 ];
 @NgModule({
   declarations: [],

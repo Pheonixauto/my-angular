@@ -1,8 +1,16 @@
 .vegetable-container {
   display: flex;
-  justify-content: flex-start;
-  justify-items: center;
   flex-wrap: wrap;
-  height: 100%;
+  height: auto;
   width: 100%;
+}
+
+.vegetable-container > .vegetable-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.vegetable-container > .vegetable-list > .vegetable-card {
+  margin-top: 20px;
 }
