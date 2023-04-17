@@ -1,10 +1,11 @@
-<div class="sidenav">
+<div class="sidenav" [style.width.vw]="expand ? 10 : 5">
   <ul class="sidenav-body">
-    <li>
-      <a [routerLink]="['/vegetable']"><span>Vegetable</span></a>
+    <li class="sidenav-item" *ngFor="let item of menu">
+      <a class="sidenav-link" [routerLink]="[item.routerLink]">
+        <i>1</i>
+        <span class="sidenav-label">{{ item.label }}</span>
+      </a>
     </li>
-    <li><a [routerLink]="['/user']">Link 1</a></li>
-    <li><a href="#">Link 3</a></li>
   </ul>
   <hr />
   <div class="sidenav-footer"></div>
