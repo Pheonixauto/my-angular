@@ -4,7 +4,7 @@ Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
 */
 
-.nav-side {
+/* .nav-side {
   display: flex;
   flex-direction: column;
 }
@@ -17,4 +17,4 @@ can be found in the LICENSE file at https://angular.io/license
   max-height: calc(100vh - 56px);
   width: 100%;
   overflow: auto;
-}
+} */

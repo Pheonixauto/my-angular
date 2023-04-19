@@ -3,19 +3,17 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'home' },
   {
-    path: 'home',
-    loadComponent: () =>
-      import('./component/home/home.component').then((c) => c.HomeComponent),
+    path: '',
+    loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
   },
-  {
-    path: 'vegetable',
-    loadChildren: () =>
-      import('./component/vegetables/vegetables-routing.module').then(
-        (m) => m.VegetablesRoutingModule
-      ),
-  },
+  // {
+  //   path: 'vegetable',
+  //   loadChildren: () =>
+  //     import('./component/vegetables/vegetables-routing.module').then(
+  //       (m) => m.VegetablesRoutingModule
+  //     ),
+  // },
   {
     path: '**',
     loadComponent: () =>

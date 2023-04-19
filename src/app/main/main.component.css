@@ -1,0 +1,14 @@
+.nav-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-container {
+  display: flex;
+}
+
+.main-content {
+  max-height: calc(100vh - 56px);
+  width: 100%;
+  overflow: auto;
+}
