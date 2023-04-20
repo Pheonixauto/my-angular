@@ -14,6 +14,13 @@ const routes: Routes = [
             (m) => m.VegetablesModule
           ),
       },
+      {
+        path: 'home',
+        loadComponent: () =>
+          import('../component/home/home.component').then(
+            (m) => m.HomeComponent
+          ),
+      },
     ],
   },
 ];

@@ -7,13 +7,6 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
   },
-  // {
-  //   path: 'vegetable',
-  //   loadChildren: () =>
-  //     import('./component/vegetables/vegetables-routing.module').then(
-  //       (m) => m.VegetablesRoutingModule
-  //     ),
-  // },
   {
     path: '**',
     loadComponent: () =>
