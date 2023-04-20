@@ -7,13 +7,6 @@ const routes: Routes = [
     loadComponent: () =>
       import('./vegetables.component').then((c) => c.VegetablesComponent),
   },
-  {
-    path: 'detail',
-    loadComponent: () =>
-      import('./vegetables-detail/vegetables-detail.component').then(
-        (m) => m.VegetablesDetailComponent
-      ),
-  },
 ];
 
 @NgModule({

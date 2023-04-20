@@ -8,6 +8,13 @@ const routes: Routes = [
     loadChildren: () => import('./main/main.module').then((m) => m.MainModule),
   },
   {
+    path: 'vegetable/detail',
+    loadComponent: () =>
+      import(
+        './component/vegetables/vegetables-detail/vegetables-detail.component'
+      ).then((m) => m.VegetablesDetailComponent),
+  },
+  {
     path: '**',
     loadComponent: () =>
       import('./share/component/page-not-found/page-not-found.component').then(

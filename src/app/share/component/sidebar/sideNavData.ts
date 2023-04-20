@@ -5,7 +5,7 @@ export const sideNavData = [
     label: 'Home',
   },
   {
-    routerLink: '/vegetable',
+    routerLink: '/vegetable/detail',
     icon: '',
     label: 'Vegetable',
   },
